@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "skip-intro"
+version = "0.1.0"
+description = "skip intro of any YouTube video"
+authors = ["Gyanendra Mishra <anomaly.the@gmail.com>"]
+readme = "README.md"
+packages = [{include = "skip_intro"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.108.0"
+uvicorn = {extras = ["standard"], version = "^0.25.0"}
+openai = "^1.6.1"
+requests = "^2.31.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

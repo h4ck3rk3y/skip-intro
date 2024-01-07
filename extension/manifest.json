@@ -1,0 +1,20 @@
+{
+    "manifest_version": 2,
+    "name": "I skip intros on YouTube",
+    "version": "1.0",
+    "permissions": ["activeTab"],
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": false
+    },    
+    "content_scripts": [
+      {
+        "matches": [ "*://*.youtube.com/*" ],
+        "js": ["content.js"],
+        "run_at": "document_start"        
+      }
+    ],
+    "externally_connectable": {
+      "matches": ["http://127.0.0.1:8000/*"]
+    }
+  }

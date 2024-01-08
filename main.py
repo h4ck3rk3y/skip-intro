@@ -18,10 +18,10 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-
 @app.get("/") 
 async def main_route():     
   return {"message": "Hey, I help skip intros"}
+
 
 @app.get("/skip-intro/{video_id}")
 def skip_intro(video_id: str, response: Response):
@@ -30,7 +30,7 @@ def skip_intro(video_id: str, response: Response):
     timestamp = get_intro_timestamp(video_id)  
     return {"timestamp": timestamp}
   except Exception as e:
-    print("retrying as that quiet didnt work")
+    print("retrying as that quite didnt work")
     timestamp = get_intro_timestamp(video_id) 
     return {"timestamp": timestamp}
   except Exception as e:

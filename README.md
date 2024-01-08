@@ -5,8 +5,7 @@ Do you like me get annoyed by the intros and the advertisements for AG-1?
 
 Look no further. This repository solves your problem, or at least tries to.
 
-Demo Video - https://www.youtube.com/watch?v=OU4YCJDmVRQ
-On Loom - https://www.loom.com/share/1b689b96392a479c89125c3fff39e0b9
+https://www.loom.com/share/1b689b96392a479c89125c3fff39e0b9
 
 # Instructions
 
